@@ -19,12 +19,12 @@ def directors_totals(nds)
   #
   # Be sure to return the result at the end!
   hash = {}
-  total_gross = 0
   for x in directors_database
-    for y in x
-      
-    total_gross = total_gross + x[:movies][:worldwide_gross]
-    puts x[]
+    total_gross = 0
+    for y in x[:movies]
+      total_gross = total_gross + y[:worldwide_gross]
+    end
+    hash[x] = total_gross
   end
-  end
+  hash
 end
