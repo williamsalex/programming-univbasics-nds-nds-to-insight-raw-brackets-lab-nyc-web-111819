@@ -18,5 +18,9 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  nil
+  hash = {}
+  total_gross = 0
+  for x in directors_database
+    puts x
+  end
 end
