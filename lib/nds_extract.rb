@@ -25,7 +25,7 @@ def directors_totals(nds)
       total_gross = total_gross + y[:worldwide_gross]
       puts total_gross
     end
-    hash[x] = total_gross
+    hash[x][:director] = total_gross
   end
   hash
 end
